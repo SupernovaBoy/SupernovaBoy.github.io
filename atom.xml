@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-17T03:10:14.873Z</updated>
+  <updated>2020-02-17T03:15:23.161Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,21 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>标签及分类测试</title>
+    <title>标签及分类测试文章</title>
     <link href="http://yoursite.com/2020/02/17/%E6%A0%87%E7%AD%BE%E5%8F%8A%E5%88%86%E7%B1%BB%E6%B5%8B%E8%AF%95/"/>
     <id>http://yoursite.com/2020/02/17/%E6%A0%87%E7%AD%BE%E5%8F%8A%E5%88%86%E7%B1%BB%E6%B5%8B%E8%AF%95/</id>
     <published>2020-02-17T03:07:59.096Z</published>
-    <updated>2020-02-17T03:10:14.873Z</updated>
+    <updated>2020-02-17T03:15:23.161Z</updated>
     
-    <content type="html"><![CDATA[<p>title: 标签及分类测试文章<br>tags:<br>    test<br>    another test<br>    try again<br>categories:<br>    Testing<br>    try again</p>]]></content>
+    <content type="html"><![CDATA[<hr><p>categories:<br>    Testing<br>    try again</p><hr>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;title: 标签及分类测试文章&lt;br&gt;tags:&lt;br&gt;    test&lt;br&gt;    another test&lt;br&gt;    try again&lt;br&gt;categories:&lt;br&gt;    Testing&lt;br&gt;    try again&lt;/p&gt;
+        &lt;hr&gt;
+&lt;p&gt;categories:&lt;br&gt;    Testing&lt;br&gt;    try again&lt;/p&gt;
+&lt;hr&gt;
 
       
     
@@ -37,31 +39,33 @@
     
     
     
+      <category term="test another test try again" scheme="http://yoursite.com/tags/test-another-test-try-again/"/>
+    
   </entry>
   
   <entry>
-    <title>成功搭建好博客</title>
+    <title>成功搭建博客</title>
     <link href="http://yoursite.com/2020/02/16/%E6%88%90%E5%8A%9F%E6%90%AD%E5%BB%BA%E5%A5%BD%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2020/02/16/%E6%88%90%E5%8A%9F%E6%90%AD%E5%BB%BA%E5%A5%BD%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-02-16T14:21:05.814Z</published>
-    <updated>2020-02-17T03:00:21.642Z</updated>
+    <updated>2020-02-17T03:15:57.705Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: 成功搭建博客<br>categories:</p><ul><li>测试categories<br>tags:</li><li>测试tag<br>我终于搭好了这个网站，从昨天晚上正式开始进军Github，一直弄到第二天两点，再到今天早上10点钟从Git开干，到现在以Hexo为框架的一个Github Page总算是做完一半了，至于为什么是一半，那是只能怪我不太懂前端了，前前后后踩了不少坑。<br>最明显的美中不足就是，在这动态背景之下，文章页面不是半透明，让动态背景少了灵魂，而纯白的背景更显得整体原生化。总的来说就是，个性化不到位，许多的美化内容，以及该添加的容，该部署的模块，还没有完全来得及部署。（本来希望看到的背景是纸片人<br>不过该夸自己的还是要夸的，一天的时间把Github网站的基本操作,Git的用法,Hexo框架,Markdown写法等练熟了不少，而在这之前，我曾尝试过用其他框架搭建个人网站，无奈于不会使用Linux系统（现在还是一知半解哈哈哈），而直到昨天晚上我才偶然间发现，原来可以通过Github直接创建个人主页，而不需要自己另外购置服务器（是我天真了），自己需要购买的就是域名，当然这个是看个人的，原生域名在Github中是会有分配的，我也只是图个乐子而已。<br>如果有同学也想通过这样的一个方式搭建起属于自己的一个网站，详情可以咨询我！<br>以后在这上面就会更新一些文章了，愿意看的朋友们可以多多关注哦！</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>我终于搭好了这个网站，从昨天晚上正式开始进军Github，一直弄到第二天两点，再到今天早上10点钟从Git开干，到现在以Hexo为框架的一个Github Page总算是做完一半了，至于为什么是一半，那是只能怪我不太懂前端了，前前后后踩了不少坑。<br>最明显的美中不足就是，在这动态背景之下，文章页面不是半透明，让动态背景少了灵魂，而纯白的背景更显得整体原生化。总的来说就是，个性化不到位，许多的美化内容，以及该添加的容，该部署的模块，还没有完全来得及部署。（本来希望看到的背景是纸片人<br>不过该夸自己的还是要夸的，一天的时间把Github网站的基本操作,Git的用法,Hexo框架,Markdown写法等练熟了不少，而在这之前，我曾尝试过用其他框架搭建个人网站，无奈于不会使用Linux系统（现在还是一知半解哈哈哈），而直到昨天晚上我才偶然间发现，原来可以通过Github直接创建个人主页，而不需要自己另外购置服务器（是我天真了），自己需要购买的就是域名，当然这个是看个人的，原生域名在Github中是会有分配的，我也只是图个乐子而已。<br>如果有同学也想通过这样的一个方式搭建起属于自己的一个网站，详情可以咨询我！<br>以后在这上面就会更新一些文章了，愿意看的朋友们可以多多关注哦！</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;hr&gt;
-&lt;p&gt;title: 成功搭建博客&lt;br&gt;categories:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;测试categories&lt;br&gt;tags:&lt;/li&gt;
-&lt;li&gt;测试tag&lt;br&gt;我终于搭好了这个网站，从昨天晚上正式开始进军Github，一直弄到第二天两点，再到今天早上10点钟从
+        &lt;p&gt;我终于搭好了这个网站，从昨天晚上正式开始进军Github，一直弄到第二天两点，再到今天早上10点钟从Git开干，到现在以Hexo为框架的一个Github Page总算是做完一半了，至于为什么是一半，那是只能怪我不太懂前端了，前前后后踩了不少坑。&lt;br&gt;最明显的美中不足就是，
       
     
     </summary>
     
     
+      <category term="测试categories" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95categories/"/>
+    
+    
+      <category term="测试tag" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95tag/"/>
     
   </entry>
   
