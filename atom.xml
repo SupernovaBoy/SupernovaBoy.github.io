@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-17T03:33:47.120Z</updated>
+  <updated>2020-02-17T03:41:40.567Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>标签及分类测试文章</title>
+    <link href="http://yoursite.com/2020/02/17/%E6%A0%87%E7%AD%BE%E5%8F%8A%E5%88%86%E7%B1%BB%E6%B5%8B%E8%AF%95/"/>
+    <id>http://yoursite.com/2020/02/17/%E6%A0%87%E7%AD%BE%E5%8F%8A%E5%88%86%E7%B1%BB%E6%B5%8B%E8%AF%95/</id>
+    <published>2020-02-17T03:07:59.096Z</published>
+    <updated>2020-02-17T03:41:40.567Z</updated>
+    
+    <content type="html"><![CDATA[<p>我怀疑这个分类和标签有毒。。。<br>为什么还没好。。。。。。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;我怀疑这个分类和标签有毒。。。&lt;br&gt;为什么还没好。。。。。。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="测试categories" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95categories/"/>
+    
+      <category term="是否可以多个分类" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95categories/%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E5%A4%9A%E4%B8%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="测试tag" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95tag/"/>
+    
+      <category term="是否可以多个标签" scheme="http://yoursite.com/tags/%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>成功搭建博客</title>
     <link href="http://yoursite.com/2020/02/16/%E6%88%90%E5%8A%9F%E6%90%AD%E5%BB%BA%E5%A5%BD%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2020/02/16/%E6%88%90%E5%8A%9F%E6%90%AD%E5%BB%BA%E5%A5%BD%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-02-16T14:21:05.814Z</published>
-    <updated>2020-02-17T03:33:47.120Z</updated>
+    <updated>2020-02-17T03:41:36.879Z</updated>
     
     <content type="html"><![CDATA[<p>我终于搭好了这个网站，从昨天晚上正式开始进军Github，一直弄到第二天两点，再到今天早上10点钟从Git开干，到现在以Hexo为框架的一个Github Page总算是做完一半了，至于为什么是一半，那是只能怪我不太懂前端了，前前后后踩了不少坑。<br>最明显的美中不足就是，在这动态背景之下，文章页面不是半透明，让动态背景少了灵魂，而纯白的背景更显得整体原生化。总的来说就是，个性化不到位，许多的美化内容，以及该添加的容，该部署的模块，还没有完全来得及部署。（本来希望看到的背景是纸片人<br>不过该夸自己的还是要夸的，一天的时间把Github网站的基本操作,Git的用法,Hexo框架,Markdown写法等练熟了不少，而在这之前，我曾尝试过用其他框架搭建个人网站，无奈于不会使用Linux系统（现在还是一知半解哈哈哈），而直到昨天晚上我才偶然间发现，原来可以通过Github直接创建个人主页，而不需要自己另外购置服务器（是我天真了），自己需要购买的就是域名，当然这个是看个人的，原生域名在Github中是会有分配的，我也只是图个乐子而已。<br>如果有同学也想通过这样的一个方式搭建起属于自己的一个网站，详情可以咨询我！<br>以后在这上面就会更新一些文章了，愿意看的朋友们可以多多关注哦！</p>]]></content>
     
@@ -35,10 +66,14 @@
     </summary>
     
     
-      <category term="测试categories 是否可以多个分类" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95categories-%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E5%A4%9A%E4%B8%AA%E5%88%86%E7%B1%BB/"/>
+      <category term="测试categories" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95categories/"/>
+    
+      <category term="是否可以多个分类" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95categories/%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E5%A4%9A%E4%B8%AA%E5%88%86%E7%B1%BB/"/>
     
     
-      <category term="测试tag 是否可以多个标签" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95tag-%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE/"/>
+      <category term="测试tag" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95tag/"/>
+    
+      <category term="是否可以多个标签" scheme="http://yoursite.com/tags/%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE/"/>
     
   </entry>
   
