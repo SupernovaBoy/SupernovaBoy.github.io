@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-24T14:04:06.774Z</updated>
+  <updated>2020-04-21T08:07:39.534Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>最近的一些想法</title>
+    <link href="http://yoursite.com/2020/04/21/%E6%9C%80%E8%BF%91%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/"/>
+    <id>http://yoursite.com/2020/04/21/%E6%9C%80%E8%BF%91%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/</id>
+    <published>2020-04-21T07:09:44.001Z</published>
+    <updated>2020-04-21T08:07:39.534Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="方向"><a href="#方向" class="headerlink" title="方向"></a>方向</h2><p>在疫情到现在的这么一段时间里，完成了许多，也空缺了很多没能够去完成，非完全性的贬义，我可真是太菜了（I’m so vegetable）。回顾这一段时间，看看我到底做了些什么，首先是在年后的一段时间内把之前缺了的Python基础内容补了回来，然后在Github上跟进，但没过多久就停了，之前尝试的其他方向也停了下来，思考了很久到底是为什么，我仍然不解，我为什么要去做这些。直到现在，我也不知道为什么要去做这些，难道为了那愚蠢的自我满足感？不可能的。现在回顾三个月前所做的一些事情，可真是太愚蠢了哈哈哈，因为自打一开始我就没有搞懂做这些的目的是什么，跟着大佬走是走不通的，别人有自己的体系，而我没有。现在回过来思考，如果要去制作一款游戏，我需要知道些什么？如果要去做一个很好的数据分析项目，我又该去学习些什么内容？当然我知道真相的一部分，但不知道真相的全部，陷入了典型的思维漩涡。没有打开局面的闭门造车是不行的。与许多同龄人一样跟着老师走，但不知道为什么要这么走，这和“瞎子”又有什么区别？重新审视当下，目标是模糊的，原因在于信息的闭塞。不如找几个方向开始着手：</p><ol><li>树莓派的上手</li><li>数据挖掘以及爬虫的入门</li><li>小游戏的模仿</li><li>“智障”预测机，机器学习入门</li></ol><h2 id="自我反省"><a href="#自我反省" class="headerlink" title="自我反省"></a>自我反省</h2><p>我得承认这么几个事实：</p><ol><li>如果感情是一门课，那我已经挂科了，过去的已经无法挽回，我需要回到正常的生活轨迹</li><li>跨界的组合能产生更美妙的反应，比如设计美学+计算机技术+绘画+音乐+文学</li><li>不易做出改变，容易陷入思维困境，需要自我激励以及外部激励</li><li>Python是给好东西，但底层同样重要，不能只会使用工具</li></ol><h2 id="做法"><a href="#做法" class="headerlink" title="做法"></a>做法</h2><ol><li>在该博客上不定期更新新的跨界思考和专业本身内容以达到激励目的</li><li>补上之前落下的一些东西</li><li>接受自我，懂得如何与人相处，学会生活</li><li>坚持接受新的信息，破除信息闭塞</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;方向&quot;&gt;&lt;a href=&quot;#方向&quot; class=&quot;headerlink&quot; title=&quot;方向&quot;&gt;&lt;/a&gt;方向&lt;/h2&gt;&lt;p&gt;在疫情到现在的这么一段时间里，完成了许多，也空缺了很多没能够去完成，非完全性的贬义，我可真是太菜了（I’m so vegetable）。回顾
+      
+    
+    </summary>
+    
+    
+      <category term="其他" scheme="http://yoursite.com/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+      <category term="自我思考" scheme="http://yoursite.com/tags/%E8%87%AA%E6%88%91%E6%80%9D%E8%80%83/"/>
+    
+  </entry>
   
   <entry>
     <title>语言元素</title>
