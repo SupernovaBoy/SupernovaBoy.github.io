@@ -283,10 +283,8 @@
 <p>当然，作为一个专业的程序员，给变量（事实上应该是所有的标识符）命名时做到见名知意也是非常重要的。</p>
 <h3 id="变量的使用"><a href="#变量的使用" class="headerlink" title="变量的使用"></a>变量的使用</h3><p>下面通过几个例子来说明变量的类型和变量使用。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""使用变量保存数据并进行算术运算"""</span></span><br><span class="line"></span><br><span class="line">a = <span class="number">321</span></span><br><span class="line">b = <span class="number">123</span></span><br><span class="line">print(a + b)</span><br><span class="line">print(a - b)</span><br><span class="line">print(a * b)</span><br><span class="line">print(a / b)</span><br><span class="line">print(a // b)</span><br><span class="line">print(a % b)</span><br><span class="line">print(a ** b)</span><br></pre></td></tr></table></figure>
-
 <p>在Python中可以使用<code>type</code>函数对变量的类型进行检查。程序设计中函数的概念跟数学上函数的概念是一致的，数学上的函数相信大家并不陌生，它包括了函数名、自变量和因变量。如果暂时不理解这个概念也不要紧，我们会在后续的章节中专门讲解函数的定义和使用。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""使用type()检查变量的类型"""</span></span><br><span class="line"></span><br><span class="line">a = <span class="number">100</span></span><br><span class="line">b = <span class="number">12.345</span></span><br><span class="line">c = <span class="number">1</span> + <span class="number">5j</span></span><br><span class="line">d = <span class="string">'hello, world'</span></span><br><span class="line">e = <span class="literal">True</span></span><br><span class="line">print(type(a)) <span class="comment"># &lt;class 'int'&gt;</span></span><br><span class="line">print(type(b)) <span class="comment"># &lt;class 'float'&gt;</span></span><br><span class="line">print(type(c)) <span class="comment"># &lt;class 'complex'&gt;</span></span><br><span class="line">print(type(d)) <span class="comment"># &lt;class 'str'&gt;</span></span><br><span class="line">print(type(e)) <span class="comment"># &lt;class 'bool'&gt;</span></span><br></pre></td></tr></table></figure>
-
 <p>可以使用Python中内置的函数对变量类型进行转换。</p>
 <ul>
 <li><code>int()</code>：将一个数值或字符串转换成整数，可以指定进制。</li>
@@ -297,11 +295,11 @@
 </ul>
 <p>下面的代码通过键盘输入两个整数来实现对两个整数的算术运算。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">使用input()函数获取键盘输入(字符串)</span></span><br><span class="line"><span class="string">使用int()函数将输入的字符串转换成整数</span></span><br><span class="line"><span class="string">使用print()函数输出带占位符的字符串</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line">a = int(input(<span class="string">'a = '</span>))</span><br><span class="line">b = int(input(<span class="string">'b = '</span>))</span><br><span class="line">print(<span class="string">'%d + %d = %d'</span> % (a, b, a + b))</span><br><span class="line">print(<span class="string">'%d - %d = %d'</span> % (a, b, a - b))</span><br><span class="line">print(<span class="string">'%d * %d = %d'</span> % (a, b, a * b))</span><br><span class="line">print(<span class="string">'%d / %d = %f'</span> % (a, b, a / b))</span><br><span class="line">print(<span class="string">'%d // %d = %d'</span> % (a, b, a // b))</span><br><span class="line">print(<span class="string">'%d %% %d = %d'</span> % (a, b, a % b))</span><br><span class="line">print(<span class="string">'%d ** %d = %d'</span> % (a, b, a ** b))</span><br></pre></td></tr></table></figure>
-
 <blockquote>
 <p><strong>说明</strong>：上面的print函数中输出的字符串使用了占位符语法，其中<code>%d</code>是整数的占位符，<code>%f</code>是小数的占位符，<code>%%</code>表示百分号（因为百分号代表了占位符，所以带占位符的字符串中要表示百分号必须写成<code>%%</code>），字符串之后的<code>%</code>后面跟的变量值会替换掉占位符然后输出到终端中，运行上面的程序，看看程序执行结果就明白啦。</p>
 </blockquote>
 <h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>Python支持多种运算符，下表大致按照优先级从高到低的顺序列出了所有的运算符，运算符的优先级指的是多个运算符同时出现时，先做什么运算然后再做什么运算。除了我们之前已经用过的赋值运算符和算术运算符，我们稍后会陆续讲到其他运算符的使用。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -309,7 +307,8 @@
 <th>描述</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>[]</code> <code>[:]</code></td>
 <td>下标，切片</td>
 </tr>
@@ -338,7 +337,8 @@
 <td>按位与</td>
 </tr>
 <tr>
-<td><code>^</code> <code>|</code></td>
+<td><code>^</code> `\</td>
+<td>`</td>
 <td>按位异或，按位或</td>
 </tr>
 <tr>
@@ -363,27 +363,26 @@
 </tr>
 <tr>
 <td><code>=</code> <code>+=</code> <code>-=</code> <code>*=</code> <code>/=</code> <code>%=</code> <code>//=</code> <code>**=</code> <code>&amp;=</code> `</td>
-<td>=<code></code>^=<code></code>&gt;&gt;=<code></code>&lt;&lt;=`</td>
+<td>=<code>`^=</code> <code>&gt;&gt;=</code> <code>&lt;&lt;=</code></td>
+<td>（复合）赋值运算符</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <blockquote>
 <p><strong>说明：</strong> 在实际开发中，如果搞不清楚运算符的优先级，可以使用括号来确保运算的执行顺序。</p>
 </blockquote>
 <p>下面的例子演示了赋值运算符和复合赋值运算符的使用。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""赋值运算符和复合赋值运算符"""</span></span><br><span class="line"></span><br><span class="line">a = <span class="number">10</span></span><br><span class="line">b = <span class="number">3</span></span><br><span class="line">a += b <span class="comment"># 相当于：a = a + b</span></span><br><span class="line">a *= a + <span class="number">2</span> <span class="comment"># 相当于：a = a * (a + 2)</span></span><br><span class="line">print(a) <span class="comment"># 想想这里会输出什么</span></span><br></pre></td></tr></table></figure>
-
 <p>下面的例子演示了比较运算符（关系运算符）、逻辑运算符和身份运算符的使用。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""比较、逻辑和算身份运算符的使用"""</span></span><br><span class="line"></span><br><span class="line">flag0 = <span class="number">1</span> == <span class="number">1</span></span><br><span class="line">flag1 = <span class="number">3</span> &gt; <span class="number">2</span></span><br><span class="line">flag2 = <span class="number">2</span> &lt; <span class="number">1</span></span><br><span class="line">flag3 = flag1 <span class="keyword">and</span> flag2</span><br><span class="line">flag4 = flag1 <span class="keyword">or</span> flag2</span><br><span class="line">flag5 = <span class="keyword">not</span> (<span class="number">1</span> != <span class="number">2</span>)</span><br><span class="line">print(<span class="string">'flag0 ='</span>, flag0) <span class="comment"># flag0 = True</span></span><br><span class="line">print(<span class="string">'flag1 ='</span>, flag1) <span class="comment"># flag1 = True</span></span><br><span class="line">print(<span class="string">'flag2 ='</span>, flag2) <span class="comment"># flag2 = False</span></span><br><span class="line">print(<span class="string">'flag3 ='</span>, flag3) <span class="comment"># flag3 = False</span></span><br><span class="line">print(<span class="string">'flag4 ='</span>, flag4) <span class="comment"># flag4 = True</span></span><br><span class="line">print(<span class="string">'flag5 ='</span>, flag5) <span class="comment"># flag5 = False</span></span><br><span class="line">print(flag1 <span class="keyword">is</span> <span class="literal">True</span>) <span class="comment"># True</span></span><br><span class="line">print(flag2 <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">False</span>) <span class="comment"># False</span></span><br></pre></td></tr></table></figure>
-
 <h3 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h3><h4 id="练习1：华氏温度转换为摄氏温度。"><a href="#练习1：华氏温度转换为摄氏温度。" class="headerlink" title="练习1：华氏温度转换为摄氏温度。"></a>练习1：华氏温度转换为摄氏温度。</h4><blockquote>
 <p>提示：华氏温度到摄氏温度的转换公式为：$C=(F - 32) \div 1.8$。</p>
 </blockquote>
 <p>参考答案：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""将华氏温度转换为摄氏温度"""</span></span><br><span class="line"></span><br><span class="line">f = float(input(<span class="string">'请输入华氏温度: '</span>))</span><br><span class="line">c = (f - <span class="number">32</span>) / <span class="number">1.8</span></span><br><span class="line">print(<span class="string">'%.1f华氏度 = %.1f摄氏度'</span> % (f, c))</span><br></pre></td></tr></table></figure>
-
 <h4 id="练习2：输入圆的半径计算计算周长和面积。"><a href="#练习2：输入圆的半径计算计算周长和面积。" class="headerlink" title="练习2：输入圆的半径计算计算周长和面积。"></a>练习2：输入圆的半径计算计算周长和面积。</h4><p>参考答案：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""输入半径计算圆的周长和面积"""</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line">radius = float(input(<span class="string">'请输入圆的半径: '</span>))</span><br><span class="line">perimeter = <span class="number">2</span> * math.pi * radius</span><br><span class="line">area = math.pi * radius * radius</span><br><span class="line">print(<span class="string">'周长: %.2f'</span> % perimeter)</span><br><span class="line">print(<span class="string">'面积: %.2f'</span> % area)</span><br></pre></td></tr></table></figure>
-
 <h4 id="练习3：输入年份判断是不是闰年。"><a href="#练习3：输入年份判断是不是闰年。" class="headerlink" title="练习3：输入年份判断是不是闰年。"></a>练习3：输入年份判断是不是闰年。</h4><p>参考答案：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">输入年份 如果是闰年输出True 否则输出False</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line">year = int(input(<span class="string">'请输入年份: '</span>))</span><br><span class="line"><span class="comment"># 如果代码太长写成一行不便于阅读 可以使用\对代码进行折行</span></span><br><span class="line">is_leap = (year % <span class="number">4</span> == <span class="number">0</span> <span class="keyword">and</span> year % <span class="number">100</span> != <span class="number">0</span>) <span class="keyword">or</span> \</span><br><span class="line">           year % <span class="number">400</span> == <span class="number">0</span></span><br><span class="line">print(is_leap)</span><br></pre></td></tr></table></figure>
 
