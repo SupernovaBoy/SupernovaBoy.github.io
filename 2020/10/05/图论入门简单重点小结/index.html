@@ -20,29 +20,34 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="和你一起，做一个独一无二的人">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SupernovaBoy的小屋">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="基本概念及其关系度，链接，平均度在无向图中某节点的度表示该节点与其他节点的连接个数。在无向图中链接数目与度还存在这种关系：$$L &#x3D; \frac 1 2 \sum ^N_{i&#x3D;1} k_i \qquad\qquad\qquad①$$其中ki表示在图中第i个节点的度数，该公式将总链接数目L与每一个点的度数ki联系了起来。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图论入门简单重点小结">
+<meta property="og:url" content="http://yoursite.com/2020/10/05/%E5%9B%BE%E8%AE%BA%E5%85%A5%E9%97%A8%E7%AE%80%E5%8D%95%E9%87%8D%E7%82%B9%E5%B0%8F%E7%BB%93/index.html">
 <meta property="og:site_name" content="SupernovaBoy的小屋">
-<meta property="og:description" content="和你一起，做一个独一无二的人">
+<meta property="og:description" content="基本概念及其关系度，链接，平均度在无向图中某节点的度表示该节点与其他节点的连接个数。在无向图中链接数目与度还存在这种关系：$$L &#x3D; \frac 1 2 \sum ^N_{i&#x3D;1} k_i \qquad\qquad\qquad①$$其中ki表示在图中第i个节点的度数，该公式将总链接数目L与每一个点的度数ki联系了起来。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/images/Figure_1.png">
+<meta property="article:published_time" content="2020-10-05T02:12:32.918Z">
+<meta property="article:modified_time" content="2020-10-05T03:14:40.557Z">
 <meta property="article:author" content="SupernovaBoy">
+<meta property="article:tag" content="学习小结">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/Figure_1.png">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/10/05/%E5%9B%BE%E8%AE%BA%E5%85%A5%E9%97%A8%E7%AE%80%E5%8D%95%E9%87%8D%E7%82%B9%E5%B0%8F%E7%BB%93/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false
+    isHome: false,
+    isPost: true
   };
 </script>
 
-  <title>SupernovaBoy的小屋</title>
+  <title>图论入门简单重点小结 | SupernovaBoy的小屋</title>
   
 
 
@@ -156,10 +161,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/10/05/%E5%9B%BE%E8%AE%BA%E5%85%A5%E9%97%A8%E7%AE%80%E5%8D%95%E9%87%8D%E7%82%B9%E5%B0%8F%E7%BB%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -173,8 +178,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/05/%E5%9B%BE%E8%AE%BA%E5%85%A5%E9%97%A8%E7%AE%80%E5%8D%95%E9%87%8D%E7%82%B9%E5%B0%8F%E7%BB%93/" class="post-title-link" itemprop="url">图论入门简单重点小结</a>
+          图论入门简单重点小结
         </h1>
 
         <div class="post-meta">
@@ -251,256 +255,52 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="基本概念及其关系"><a href="#基本概念及其关系" class="headerlink" title="基本概念及其关系"></a>基本概念及其关系</h3><h4 id="度，链接，平均度"><a href="#度，链接，平均度" class="headerlink" title="度，链接，平均度"></a>度，链接，平均度</h4><p>在无向图中某节点的度表示该节点与其他节点的连接个数。在<strong>无向图</strong>中链接数目与度还存在这种关系：<br>$$<br>L = \frac 1 2 \sum ^N_{i=1} k_i \qquad\qquad\qquad①<br>$$<br>其中ki表示在图中第i个节点的度数，该公式将总链接数目L与每一个点的度数ki联系了起来。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/10/05/%E5%9B%BE%E8%AE%BA%E5%85%A5%E9%97%A8%E7%AE%80%E5%8D%95%E9%87%8D%E7%82%B9%E5%B0%8F%E7%BB%93/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+        <h3 id="基本概念及其关系"><a href="#基本概念及其关系" class="headerlink" title="基本概念及其关系"></a>基本概念及其关系</h3><h4 id="度，链接，平均度"><a href="#度，链接，平均度" class="headerlink" title="度，链接，平均度"></a>度，链接，平均度</h4><p>在无向图中某节点的度表示该节点与其他节点的连接个数。在<strong>无向图</strong>中链接数目与度还存在这种关系：<br>$$<br>L = \frac 1 2 \sum ^N_{i=1} k_i \qquad\qquad\qquad①<br>$$<br>其中ki表示在图中第i个节点的度数，该公式将总链接数目L与每一个点的度数ki联系了起来。<a id="more"></a>而且在该公式中<strong>包含了自身到自身的一个链接</strong>至于为什么在这里乘以1/2是因为无向图中每一个链接都被计算了两次而在<strong>有向图</strong>中要联系总链接数与各个节点的度数，即可将出度和入度分开计算即可。例如：<br>$$<br>L = \sum^N_{i=1}k_{in} = \sum^N_{i=1}k_{out}\qquad\qquad\qquad②<br>$$<br>在<strong>无向图</strong>中，平均度顾名思义即所有度的平均值，即<br>$$<br>\langle k \rangle = \frac 1 N \sum^N_{i=1}k_i = \frac {2L} N\qquad\qquad\qquad③<br>$$<br>其中公式③为代入公式②后所得的式子，而在有向图中我们把公式③中的2去掉即可</p>
+<h4 id="聚集系数"><a href="#聚集系数" class="headerlink" title="聚集系数"></a>聚集系数</h4><p>节点的聚类系数是度量某节点的两个邻居节点也互为邻居的平均概率。也就是以该节点为中心，其周围的邻居中相互之间存在边的个数 <strong>除以</strong> 该节点周围邻居节点对总数。可写为：<br>$$<br>C_i = \frac {节点i的邻居中直接相连的节点对的个数} {节点周围邻居节点对总数}<br>$$<br>聚集系数描绘了一个概率问题，也就是如果我随机从i节点找两个邻居节点，聚集系数则为它们之间存在链接的一个概率。使用数学语言描述可以描述为：<br>$$<br>C_i = \frac {2L} {k_i(k_i-1)}\qquad\qquad\qquad④<br>$$<br>同样和度的概念一样，既然有了针对一个节点的聚集系数，则我们可以引出对整个图，或者叫做网络中的平均聚集系数：<br>$$<br>\langle C \rangle = \frac 1 N \sum ^N_{i=1} C_i\qquad\qquad\qquad⑤<br>$$<br>与聚集系数类似，平均聚集系数的概率解释可以描述为：<strong>在图中随机选择一个点，其邻居相连的概率</strong></p>
+<h4 id="计算聚集系数"><a href="#计算聚集系数" class="headerlink" title="计算聚集系数"></a>计算聚集系数</h4><p>在Python中我们可以这样来计算一个无向图中点的聚集系数：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cal_ci</span><span class="params">(G, u)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> sum([<span class="number">1</span> <span class="keyword">for</span> x <span class="keyword">in</span> G[u] <span class="keyword">for</span> y <span class="keyword">in</span> G[x] <span class="keyword">if</span> y <span class="keyword">in</span> G[u]]) / (G.degree[u] * (G.degree[u] - <span class="number">1</span>)) <span class="keyword">if</span> G.degree[u] &gt; <span class="number">1</span>\</span><br><span class="line">        <span class="keyword">else</span> <span class="number">0</span></span><br></pre></td></tr></table></figure>
+
+<p>在遍历字典的时候两两节点进行了重复计算1，所以我们在分母处也不用加上1/2，在这里如果该点度数为1则直接返回0。当然在networkx里面也集成了该功能，原理也是一样的。下面我们来举个例子：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> networkx <span class="keyword">as</span> nx</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">G = nx.Graph()</span><br><span class="line">G.add_edge(<span class="string">'a'</span>, <span class="string">'b'</span>, weight = <span class="number">0.8</span>)</span><br><span class="line">G.add_edge(<span class="string">'a'</span>, <span class="string">'c'</span>, weight = <span class="number">0.5</span>)</span><br><span class="line">G.add_edge(<span class="string">'c'</span>, <span class="string">'d'</span>, weight = <span class="number">0.4</span>)</span><br><span class="line">G.add_edge(<span class="string">'c'</span>, <span class="string">'e'</span>, weight = <span class="number">0.7</span>)</span><br><span class="line">G.add_edge(<span class="string">'c'</span>, <span class="string">'f'</span>, weight = <span class="number">0.6</span>)</span><br><span class="line">G.add_edge(<span class="string">'a'</span>, <span class="string">'d'</span>, weight = <span class="number">0.3</span>)</span><br><span class="line">e_large = [(u, v) <span class="keyword">for</span> (u, v, d) <span class="keyword">in</span> G.edges(data=<span class="literal">True</span>) <span class="keyword">if</span> d[<span class="string">'weight'</span>] &gt; <span class="number">0.5</span>]</span><br><span class="line">e_small = [(u, v) <span class="keyword">for</span> (u, v, d) <span class="keyword">in</span> G.edges(data=<span class="literal">True</span>) <span class="keyword">if</span> d[<span class="string">'weight'</span>] &lt;= <span class="number">0.5</span>]</span><br><span class="line">pos = nx.spring_layout(G)  <span class="comment"># positions for all nodes</span></span><br><span class="line"><span class="comment"># nodes</span></span><br><span class="line">nx.draw_networkx_nodes(G, pos, node_size=<span class="number">700</span>)</span><br><span class="line"><span class="comment"># edges</span></span><br><span class="line">nx.draw_networkx_edges(G, pos, edgelist=e_large, width=<span class="number">6</span>, alpha=<span class="number">0.7</span>)</span><br><span class="line">nx.draw_networkx_edges(G, pos, edgelist=e_small, width=<span class="number">6</span>, alpha=<span class="number">0.5</span>, edge_color=<span class="string">'blue'</span>, style=<span class="string">'dashed'</span>)</span><br><span class="line"><span class="comment"># labels</span></span><br><span class="line">nx.draw_networkx_labels(G, pos, font_size=<span class="number">20</span>, font_color=<span class="string">'pink'</span>, font_family=<span class="string">'Consolas'</span>)</span><br><span class="line">plt.axis(<span class="string">'off'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<p>该代码绘制结果为：<img src="/images/Figure_1.png" alt="绘制结果"></p>
+<p>根据图片我们可以很简单的计算每个节点的聚集系数，当然程序的运行结果如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">print(cal_ci(G, <span class="string">'a'</span>))</span><br><span class="line">print(cal_ci(G, <span class="string">'b'</span>))</span><br><span class="line">print(cal_ci(G, <span class="string">'c'</span>))</span><br><span class="line">print(cal_ci(G, <span class="string">'d'</span>))</span><br><span class="line">print(cal_ci(G, <span class="string">'e'</span>))</span><br><span class="line">print(cal_ci(G, <span class="string">'f'</span>))</span><br><span class="line">&gt;&gt;&gt;<span class="number">0.3333333333333333</span></span><br><span class="line">&gt;&gt;&gt;<span class="number">0</span></span><br><span class="line">&gt;&gt;&gt;<span class="number">0.16666666666666666</span></span><br><span class="line">&gt;&gt;&gt;<span class="number">1.0</span></span><br><span class="line">&gt;&gt;&gt;<span class="number">0</span></span><br><span class="line">&gt;&gt;&gt;<span class="number">0</span></span><br></pre></td></tr></table></figure>
+
     </div>
 
     
     
     
+      <div>
+        
+          <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢你的阅读-------------</div>
+    
+</div>
+
+        
+      </div>
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%93/" rel="tag"># 学习小结</a>
+          </div>
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/24/%E8%AF%AD%E8%A8%80%E5%85%83%E7%B4%A0/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/th.png">
-      <meta itemprop="name" content="SupernovaBoy">
-      <meta itemprop="description" content="和你一起，做一个独一无二的人">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SupernovaBoy的小屋">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/24/%E8%AF%AD%E8%A8%80%E5%85%83%E7%B4%A0/" class="post-title-link" itemprop="url">语言元素</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-24 22:02:13" itemprop="dateCreated datePublished" datetime="2020-02-24T22:02:13+08:00">2020-02-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-05 10:14:08" itemprop="dateModified" datetime="2020-10-05T10:14:08+08:00">2020-10-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
-                  </a>
-                </span>
-            </span>
-
-          
-            <span id="/2020/02/24/%E8%AF%AD%E8%A8%80%E5%85%83%E7%B4%A0/" class="post-meta-item leancloud_visitors" data-flag-title="语言元素" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/02/24/%E8%AF%AD%E8%A8%80%E5%85%83%E7%B4%A0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/24/%E8%AF%AD%E8%A8%80%E5%85%83%E7%B4%A0/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>4.6k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="语言元素"><a href="#语言元素" class="headerlink" title="语言元素"></a>语言元素</h2><h3 id="指令和程序"><a href="#指令和程序" class="headerlink" title="指令和程序"></a>指令和程序</h3><p>计算机的硬件系统通常由五大部件构成，包括：运算器、控制器、存储器、输入设备和输出设备。其中，运算器和控制器放在一起就是我们通常所说的中央处理器，它的功能是执行各种运算和控制指令以及处理计算机软件中的数据。我们通常所说的程序实际上就是指令的集合，我们程序就是将一系列的指令按照某种方式组织到一起，然后通过这些指令去控制计算机做我们想让它做的事情。今天我们大多数时候使用的计算机，虽然它们的元器件做工越来越精密，处理能力越来越强大，但究其本质来说仍然属于<a href="https://zh.wikipedia.org/wiki/%E5%86%AF%C2%B7%E8%AF%BA%E4%BC%8A%E6%9B%BC%E7%BB%93%E6%9E%84" target="_blank" rel="noopener">“冯·诺依曼结构”</a>的计算机。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/02/24/%E8%AF%AD%E8%A8%80%E5%85%83%E7%B4%A0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/24/%E8%AF%AD%E8%A8%80%E5%85%83%E7%B4%A0/" rel="prev" title="语言元素">
+      <i class="fa fa-chevron-left"></i> 语言元素
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/19/%E5%B0%8F%E5%B7%B7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/th.png">
-      <meta itemprop="name" content="SupernovaBoy">
-      <meta itemprop="description" content="和你一起，做一个独一无二的人">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SupernovaBoy的小屋">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/19/%E5%B0%8F%E5%B7%B7/" class="post-title-link" itemprop="url">小巷</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-02-19 00:00:44 / 修改时间：00:53:46" itemprop="dateCreated datePublished" datetime="2020-02-19T00:00:44+08:00">2020-02-19</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%97%E6%AD%8C/" itemprop="url" rel="index">
-                    <span itemprop="name">诗歌</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%97%E6%AD%8C/%E7%8E%B0%E4%BB%A3/" itemprop="url" rel="index">
-                    <span itemprop="name">现代</span>
-                  </a>
-                </span>
-            </span>
-
-          
-            <span id="/2020/02/19/%E5%B0%8F%E5%B7%B7/" class="post-meta-item leancloud_visitors" data-flag-title="小巷" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
     
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/02/19/%E5%B0%8F%E5%B7%B7/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/19/%E5%B0%8F%E5%B7%B7/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>28</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>小巷<br>又弯又长</p>
-<p>没有门<br>没有窗</p>
-<p>我拿把旧钥匙<br>敲着厚厚的墙</p>
-<p>　　　　　　　　——顾城</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
   </article>
   
   
@@ -508,15 +308,10 @@
 
   </div>
 
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
-
-
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -563,6 +358,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本概念及其关系"><span class="nav-number">1.</span> <span class="nav-text">基本概念及其关系</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#度，链接，平均度"><span class="nav-number">1.1.</span> <span class="nav-text">度，链接，平均度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#聚集系数"><span class="nav-number">1.2.</span> <span class="nav-text">聚集系数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#计算聚集系数"><span class="nav-number">1.3.</span> <span class="nav-text">计算聚集系数</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
