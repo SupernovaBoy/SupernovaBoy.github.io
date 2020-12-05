@@ -76,29 +76,6 @@
   </entry>
   
   <entry>
-    <title>test</title>
-    <link href="http://yoursite.com/2020/10/05/test/"/>
-    <id>http://yoursite.com/2020/10/05/test/</id>
-    <published>2020-10-05T04:26:07.000Z</published>
-    <updated>2020-10-05T04:28:03.038Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/.com//Figure_1.png"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;/.com//Figure_1.png&quot;&gt;&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>图论入门简单重点小结</title>
     <link href="http://yoursite.com/2020/10/05/%E5%9B%BE%E8%AE%BA%E5%85%A5%E9%97%A8%E7%AE%80%E5%8D%95%E9%87%8D%E7%82%B9%E5%B0%8F%E7%BB%93/"/>
     <id>http://yoursite.com/2020/10/05/%E5%9B%BE%E8%AE%BA%E5%85%A5%E9%97%A8%E7%AE%80%E5%8D%95%E9%87%8D%E7%82%B9%E5%B0%8F%E7%BB%93/</id>
